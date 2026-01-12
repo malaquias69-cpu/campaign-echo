@@ -28,7 +28,7 @@ const DonationSidebar = () => {
 
   const handleCopyPix = async () => {
     try {
-      await navigator.clipboard.writeText("doe@esperancadobem.org");
+      await navigator.clipboard.writeText("elviolopes3@gmail.com");
       setCopied(true);
       toast.success("Chave PIX copiada!");
       setTimeout(() => setCopied(false), 2000);
@@ -138,7 +138,7 @@ const DonationSidebar = () => {
         <div className="bg-secondary rounded-lg p-4 mb-3">
           <p className="text-sm text-muted-foreground mb-1">Chave PIX (E-mail):</p>
           <p className="font-mono text-foreground font-medium break-all">
-            doe@esperancadobem.org
+            elviolopes3@gmail.com
           </p>
         </div>
 
