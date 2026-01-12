@@ -1,23 +1,15 @@
-import heroImage from "@/assets/hero-child.jpg";
+import heroImage from "@/assets/hero-child.png";
 
 const HeroSection = () => {
   return (
     <section className="relative">
       {/* Hero Image */}
-      <div className="relative w-full h-[300px] md:h-[400px] lg:h-[450px] overflow-hidden">
+      <div className="relative w-full overflow-hidden">
         <img
           src={heroImage}
           alt="Davi - criança em tratamento"
-          className="w-full h-full object-cover"
+          className="w-full h-auto object-cover"
         />
-        {/* Overlay with text */}
-        <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6">
-          <div className="bg-foreground/70 backdrop-blur-sm rounded-lg px-4 py-2">
-            <p className="text-primary-foreground text-sm md:text-base font-medium">
-              Meu filho lindo ❤️❤️❤️❤️
-            </p>
-          </div>
-        </div>
       </div>
 
       {/* Title */}
