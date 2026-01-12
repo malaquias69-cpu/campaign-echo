@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoEsperanca from "@/assets/logo-esperanca.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,13 +19,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-[72px]">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">M</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-bold text-foreground text-sm leading-tight">Instituto</span>
-              <span className="font-bold text-primary text-sm leading-tight">Mãos do Bem</span>
-            </div>
+            <img src={logoEsperanca} alt="Esperança do Bem" className="h-14 w-auto" />
           </div>
 
           {/* Desktop Navigation */}

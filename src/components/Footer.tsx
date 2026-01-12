@@ -1,16 +1,12 @@
+import logoEsperanca from "@/assets/logo-esperanca.png";
+
 const Footer = () => {
   return (
     <footer className="bg-footer text-footer-foreground py-12 mt-16">
       <div className="container mx-auto px-4 text-center">
         {/* Logo */}
-        <div className="flex items-center justify-center gap-2 mb-6">
-          <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-xl">M</span>
-          </div>
-          <div className="flex flex-col text-left">
-            <span className="font-bold text-footer-foreground text-sm leading-tight">Instituto</span>
-            <span className="font-bold text-primary text-sm leading-tight">Mãos do Bem</span>
-          </div>
+        <div className="flex items-center justify-center mb-6">
+          <img src={logoEsperanca} alt="Esperança do Bem" className="h-20 w-auto" />
         </div>
 
         {/* Community Text */}
